@@ -17,6 +17,17 @@ class Solution {
     }
 }
 
+# 120824. 짝수 홀수 개수 - (int), Arrays, stream, filter, count
+
+import java.util.Arrays;
+
+class Solution {
+    public int[] solution(int[] num_list) {
+        int[] answer = {(int) Arrays.stream(num_list).filter(s->s%2==0).count(),(int) Arrays.stream(num_list).filter(s->s%2!=0).count()};
+        return answer;
+    }
+}
+
 # 120829. 각도기 - 삼항 연산자
 
 class Solution {
