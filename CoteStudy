@@ -1,3 +1,12 @@
+# 120814. 피자 나눠 먹기 (1) - Math.ceil
+
+class Solution {
+    public double solution(double n) {
+        double answer = Math.ceil(n/7);
+        return answer;
+    }
+}
+
 # 120817. 배열의 평균값 - Stream, average, OrElse
 
 import java.util.Arrays;
