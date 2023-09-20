@@ -1,4 +1,4 @@
-# 120814. 피자 나눠 먹기 (1) - Math.ceil
+# 120814. 피자 나눠 먹기 (1) : Math.ceil
 
 class Solution {
     public double solution(double n) {
@@ -7,7 +7,7 @@ class Solution {
     }
 }
 
-# 120817. 배열의 평균값 - Stream, average, OrElse
+# 120817. 배열의 평균값 : Stream, average, OrElse
 
 import java.util.Arrays;
 
@@ -17,7 +17,7 @@ class Solution {
     }
 }
 
-# 120824. 짝수 홀수 개수 - (int), Arrays, stream, filter, count
+# 120824. 짝수 홀수 개수 : (int), Arrays, stream, filter, count
 
 import java.util.Arrays;
 
@@ -28,7 +28,7 @@ class Solution {
     }
 }
 
-# 120829. 각도기 - 삼항 연산자
+# 120829. 각도기 : 삼항 연산자
 
 class Solution {
     public int solution(int angle) {
@@ -50,7 +50,7 @@ class Solution {
     }
 }
 
-# 120831. 짝수의 합 - Stream, range, filter
+# 120831. 짝수의 합 : Stream, range, filter
 
 import java.util.stream.IntStream;
 
@@ -63,7 +63,7 @@ class Solution {
     }
 }
 
-# 120841. 점의 위치 구하기 - 삼항연산자, &&
+# 120841. 점의 위치 구하기 : 삼항연산자, &&
 
 class Solution {
     public int solution(int[] dot) {
@@ -71,7 +71,20 @@ class Solution {
     }
 }
 
-# 120898. 편지 - length()
+# 120889. 삼각형의 완성조건(1) : Array.sort(), 삼항연산자
+
+import java.util.Arrays;
+
+class Solution {
+    public int solution(int[] sides) {
+        Arrays.sort(sides);
+        return sides[0] + sides[1] > sides[2] ? 1 : 2;
+    }
+}
+
+// answer = [1 if sorted(sides)[0] + sorted(sides)[1] > sorted(sides)[2] else 2][0]
+
+# 120898. 편지 : length()
 
 class Solution {
     public int solution(String message) {
