@@ -51,6 +51,7 @@ class Solution {
 }
 
 # 120831. 짝수의 합 - Stream, range, filter
+
 import java.util.stream.IntStream;
 
 class Solution {
@@ -59,6 +60,14 @@ class Solution {
                 .filter(s->s%2==0)
                 .sum();
 
+    }
+}
+
+# 120841. 점의 위치 구하기 - 삼항연산자, &&
+
+class Solution {
+    public int solution(int[] dot) {
+        return dot[0]>0 && dot[1]>0 ? 1 : dot[0]<0 && dot[1]>0 ? 2 : dot[0]<0 && dot[1]<0 ? 3 : 4;
     }
 }
 
