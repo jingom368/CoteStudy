@@ -1,1 +1,33 @@
-# 
+# 120829. 각도기 - 삼항 연산자
+
+class Solution {
+    public int solution(int angle) {
+        // int answer;
+        // if (angle < 90) {
+        //     answer = 1;
+        // }
+        // else if (angle == 90) {
+        //     answer = 2;
+        // }
+        // else if (angle > 90 & angle < 180) {
+        //     answer = 3;   
+        // }
+        // else {
+        //     answer = 4;
+        // }
+        // return answer;
+        return angle == 180 ? 4 : angle < 180 & angle > 90 ? 3 : angle == 90 ? 2 : 1;
+    }
+}
+
+# 120831. 짝수의 합 - 스트림, 레인지, 필터
+import java.util.stream.IntStream;
+
+class Solution {
+    public int solution(int n) {
+        return IntStream.rangeClosed(0,n)
+                .filter(s->s%2==0)
+                .sum();
+
+    }
+}
