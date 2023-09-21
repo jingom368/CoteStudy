@@ -17,6 +17,31 @@ class Solution {
     }
 }
 
+# 120818. 옷가게 할인 받기 : if
+
+class Solution {
+    public int solution(int price) {
+        // int answer = 0;
+        // if (price >= 10 && price < 100000)
+        //     answer = (int) (price);
+        // if (price >= 100000 && price < 300000)
+        //     answer = (int) (price*(1-0.05));
+        // if (price >= 300000 && price < 500000)
+        //     answer = (int) (price*(1-0.1));
+        // if (price >= 500000)
+        //     answer = (int) (price*(1-0.2));
+        // return answer;
+        
+        int answer = 0;
+
+        if(price>=500000) return (int)(price*0.8);
+        if(price>=300000) return (int)(price*0.9);
+        if(price>=100000) return (int)(price*0.95);
+
+        return price;
+    }
+}
+
 # 120821. 배열 뒤집기 : int[], for, length / List<Integer>, Arrays, stream, boxed(), collect(Collectors.toList()), Collections.reverse(list), mapToInt(Integer::intValue)
 
 import java.util.*;
