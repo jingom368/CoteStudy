@@ -1,3 +1,15 @@
+# 120809. 배열 두배 만들기 : new int 
+
+class Solution {
+    public int[] solution(int[] numbers) {
+        int[] answer = new int[numbers.length];
+        for(int i=0; i<numbers.length; i++) {
+            answer[i] = numbers[i] * 2;
+        }
+        return answer;
+    }
+}
+
 # 120814. 피자 나눠 먹기 (1) : Math.ceil
 
 class Solution {
